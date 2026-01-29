@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automate - AI Automation Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <a href="index.html" class="logo-text">AI Automate</a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">AI Automation That Works for Your Business</h1>
+                <p class="hero-description">
+                    Transform your business with intelligent automation. Our AI-powered solutions streamline workflows, 
+                    reduce costs, and help you focus on what matters most. Discover how automation can revolutionize your operations.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('searchSection').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                    <button class="btn btn-secondary" onclick="openVideoModal()">
+                        <span class="play-icon">▶</span> Watch Demo
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Right Visual -->
+            <div class="hero-visual">
+                <div class="ai-illustration">
+                    <div class="ai-brain">
+                        <div class="brain-circle"></div>
+                        <div class="brain-pulse pulse-1"></div>
+                        <div class="brain-pulse pulse-2"></div>
+                        <div class="brain-pulse pulse-3"></div>
+                    </div>
+                    <div class="automation-lines">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH SECTION ===== -->
+    <section class="search-section" id="searchSection">
+        <div class="search-container">
+            <h2 class="search-title">What would you like to automate?</h2>
+            
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Ask something..." 
+                    id="searchInput"
+                >
+                <button class="search-btn" onclick="performSearch()">
+                    <span>🔍</span>
+                </button>
+            </div>
+            
+            <!-- Search Tags -->
+            <div class="search-tags">
+                <button class="tag" onclick="selectTag(this)">AI Automation</button>
+                <button class="tag" onclick="selectTag(this)">Chatbots</button>
+                <button class="tag" onclick="selectTag(this)">Business AI</button>
+                <button class="tag" onclick="selectTag(this)">Smart Workflow</button>
+                <button class="tag" onclick="selectTag(this)">AI Tools</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT COMPANY SECTION ===== -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">About AI Automation</h2>
+                <div class="about-divider"></div>
+                
+                <p class="about-text">
+                    <strong>AI Automation</strong> harnesses the power of artificial intelligence and machine learning to automate 
+                    repetitive tasks and complex processes. Our solutions enable businesses to operate more efficiently by reducing 
+                    manual work, minimizing errors, and accelerating decision-making.
+                </p>
+                
+                <p class="about-text">
+                    By implementing smart automation, companies can save valuable time and resources, allowing teams to focus on 
+                    strategic initiatives and innovation. Whether it's customer service, data processing, or workflow management, 
+                    our AI solutions adapt to your unique business needs.
+                </p>
+                
+                <p class="about-text">
+                    <strong>The Future is Now:</strong> As technology evolves, AI automation will become increasingly integrated 
+                    into every business sector. Organizations that embrace automation today will lead tomorrow, gaining competitive 
+                    advantages in efficiency, scalability, and customer experience. The future belongs to businesses that leverage 
+                    intelligent automation to work smarter, not harder.
+                </p>
+
+                <a href="about.html" class="learn-more-btn">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Company Info -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <h4>AI Automate</h4>
+                </div>
+                <p class="footer-description">
+                    Leading provider of intelligent automation solutions that help businesses streamline operations 
+                    and unlock their full potential through cutting-edge AI technology.
+                </p>
+            </div>
+
+            <!-- Column 2: Pages -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#blog">Our Blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Services -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">AI Solutions</a></li>
+                    <li><a href="services.html">Chatbot Development</a></li>
+                    <li><a href="services.html">Workflow Automation</a></li>
+                    <li><a href="services.html">AI Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Contact & Support</h4>
+                <ul class="footer-info">
+                    <li>
+                        <strong>📧 Email:</strong><br>
+                        <a href="mailto:info@aiautomate.com">info@aiautomate.com</a>
+                    </li>
+                    <li>
+                        <strong>📍 Location:</strong><br>
+                        Tech Hub, Innovation City
+                    </li>
+                    <li>
+                        <strong>🕐 Hours:</strong><br>
+                        Mon - Fri: 9AM - 6PM
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Automate. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms & Conditions</a></p>
+        </div>
+    </footer>
+
+    <!-- ===== VIDEO MODAL ===== -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="AI Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
